@@ -16,7 +16,8 @@ class App extends Component {
       check: false,
       id: this.state.data.length
     };
-    if(this.state.name === ""){
+    const value = this.state.name.trim();
+    if(!value){
       alert("Please Enter A message")
     }
     else{
@@ -51,6 +52,7 @@ class App extends Component {
     ));
     return (
       <main className = "container">
+        <h1>My Todo List</h1>
         <form onSubmit={this.handleClick}>
           <input
             onChange={this.inputChange}

@@ -5,7 +5,7 @@ import "./index.css";
 function Input(props) {
   const completedStyle = {
     fontSize: "20px",
-    textDecoration: "line-through",
+    // textDecoration: "line-through",
     color: "#aaa",
     transition: "all ease 0.5s",
   }
@@ -22,7 +22,8 @@ function Input(props) {
           onChange={() => props.change(props.item.id)}
           type="checkbox"
         />
-        <span style={props.item.check ? completedStyle : null}>{props.item.name}</span>
+        <span className="icon"></span>
+        <span className="list" style={props.item.check ? completedStyle : null}>{props.item.name}</span>
       </label>
   );
 }

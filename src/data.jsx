@@ -35,10 +35,9 @@ const Data = [
     id: 6,
   },
   {
-    name: "Learn Arduino / Another Programming Language",
+    name: "Another Programming Language",
     check: false,
     id: 7,
   },
-
 ];
 export default Data
