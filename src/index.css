@@ -43,6 +43,8 @@ main > h1{
 form{
   /* border: 1px solid red; */
   max-width: 600px;
+  width: 90%;
+  margin: auto;
   margin-top: 20px;
   display: flex;
   align-items: center;
